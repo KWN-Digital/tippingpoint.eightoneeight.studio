@@ -1,0 +1,41 @@
+{
+  "private": true,
+  "name": "kwn-config-nextjs",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "prepare": "husky install",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "imports": {
+    "#package": "./package.json",
+    "#components": "./src/components",
+    "#services": "./src/services*",
+    "#public": "./public",
+    "#themes": "./src/themes"
+  },
+  "dependencies": {
+    "moment": "^2.29.4",
+    "next": "^13.4.12",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rss": "^1.2.2",
+    "styled-components": "^6.0.7",
+    "styled-normalize": "^8.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.25",
+    "@types/rss": "^0.0.30",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "eslint": "8.46.0",
+    "eslint-config-next": "^13.4.12",
+    "eslint-config-prettier": "^8.10.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.3",
+    "prettier": "^3.0.1",
+    "typescript": "^4.9.5"
+  }
+}
