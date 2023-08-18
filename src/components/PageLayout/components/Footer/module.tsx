@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import { Container } from './style'
 
 export const Footer = () => {
@@ -8,13 +7,7 @@ export const Footer = () => {
     <Container>
       <ul>
         <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/terms">Terms</Link>
-        </li>
-        <li>
-          <Link href="/privacy">Privacy</Link>
+          &copy; {new Date().getFullYear()} 818 Studios. All rights reserved.
         </li>
       </ul>
     </Container>

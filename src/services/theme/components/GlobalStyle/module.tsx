@@ -16,9 +16,20 @@ export const GlobalStyle = createGlobalStyle<{ styles: RuleSet }>`
       `}
 
     ${({ theme }) =>
+      theme.typography?.body &&
+      css`
+        body {
+          font-family: ${theme.typography.body.fontFamily};
+          font-size: ${theme.typography.body.fontSize};
+          font-weight: ${theme.typography.body.fontWeight};
+          line-height: ${theme.typography.body.lineHeight};
+        }
+      `}
+
+    ${({ theme }) =>
       theme.typography?.link &&
       css`
-        a {
+        a:link {
           color: ${theme.typography.link.color};
           text-decoration: ${theme.typography.link.textDecoration};
         }
@@ -27,8 +38,8 @@ export const GlobalStyle = createGlobalStyle<{ styles: RuleSet }>`
     ${({ theme }) =>
       theme.typography?.linkHover &&
       css`
-        a:hover {
-          color: ${theme.typography.linkHover.color};
+        a:link:hover {
+          color: ${theme.typography.link.hover?.color};
           text-decoration: ${theme.typography.linkHover.textDecoration};
         }
       `}
@@ -38,5 +49,10 @@ export const GlobalStyle = createGlobalStyle<{ styles: RuleSet }>`
 		display: block;
 	}
 
-    ${({ styles }) => styles}
+  buttton {
+    background-color: transparent;
+    border: none;
+  }
+
+  ${({ styles }) => styles}
 `

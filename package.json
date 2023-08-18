@@ -1,6 +1,5 @@
 {
-  "private": true,
-  "name": "kwn-config-nextjs",
+  "name": "eightoneeight.studio",
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
@@ -17,15 +16,22 @@
     "#themes": "./src/themes"
   },
   "dependencies": {
+    "@next/font": "^13.4.16",
+    "@u-wave/react-vimeo": "^0.9.10",
+    "framer-motion": "^10.15.2",
     "moment": "^2.29.4",
     "next": "^13.4.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.5.2",
+    "react-scroll-parallax": "^3.4.2",
+    "react-vimeo": "^2.0.0",
     "rss": "^1.2.2",
     "styled-components": "^6.0.7",
     "styled-normalize": "^8.0.7"
   },
   "devDependencies": {
+    "@emotion/is-prop-valid": "^1.2.1",
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.25",
     "@types/rss": "^0.0.30",

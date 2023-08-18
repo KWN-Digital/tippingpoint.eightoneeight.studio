@@ -1,6 +1,14 @@
 module.exports = {
   reactStrictMode: true,
   experimental: { appDir: true },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'placehold.it',
+      },
+    ],
+  },
   rewrites: async () => [
     {
       source: '/healthcheck',

@@ -1,18 +1,14 @@
 import { PropsWithChildren } from 'react'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
-import { SwitchTheme } from '#services/theme'
+import { Providers } from './components/Providers'
 
 export const PageLayout = ({ children }: PropsWithChildren) => {
   return (
-    <SwitchTheme>
-      <header>
-        <Header />
-      </header>
+    <Providers>
+      <Header />
       <main>{children}</main>
-      <footer>
-        <Footer />
-      </footer>
-    </SwitchTheme>
+      <Footer />
+    </Providers>
   )
 }

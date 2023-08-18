@@ -8,6 +8,8 @@ export const Container = styled.footer`
   padding: 1rem;
   background-color: ${({ theme }) => theme.palette?.backgroundColor};
   color: ${({ theme }) => theme.palette?.textColor};
+  font-size: 12px;
+  margin-top: 6rem;
 
   ul {
     display: flex;

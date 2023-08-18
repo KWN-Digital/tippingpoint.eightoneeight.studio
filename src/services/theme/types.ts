@@ -9,7 +9,7 @@ export type Palette = {
 }
 
 export type Typography = {
-  color: Color
+  color?: Color
   textDecoration?:
     | 'none'
     | 'underline'
@@ -21,11 +21,30 @@ export type Typography = {
     | 'unset'
     | 'revert'
   fontFamily?: string
-  fontSize: number
-  fontWeight?: number
+  fontSize?: number | string
+  fontWeight?:
+    | 'normal'
+    | 'bold'
+    | 'bolder'
+    | 'lighter'
+    | number
+    | 'inherit'
+    | 'initial'
+    | 'unset'
+    | 'revert'
+    | '100'
+    | '200'
+    | '300'
+    | '400'
+    | '500'
+    | '600'
+    | '700'
+    | '800'
+    | '900'
   lineHeight?: number
   letterSpacing?: number
   fontStyle?: string
+  hover?: Typography
 }
 
 export type Breakpoints = {
@@ -44,7 +63,6 @@ export interface Theme {
   typography?: {
     body: Typography
     link: Typography
-    linkHover: Typography
     [key: string]: Typography
   }
   breakpoints: Breakpoints

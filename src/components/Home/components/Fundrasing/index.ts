@@ -1,0 +1,1 @@
+export { Fundraising } from './module'
