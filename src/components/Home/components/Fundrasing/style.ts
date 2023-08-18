@@ -25,6 +25,39 @@ export const Container = styled.div`
       white-space: nowrap;
     }
   }
+
+  h6 {
+    /* font-family: ${({ theme }) => theme.typography?.headers.fontFamily}; */
+    color: ${({ theme }) => theme.palette?.textColor};
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    @media ${({ theme }) => theme.media?.lg} {
+      font-size: 23px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.65;
+    @media ${({ theme }) => theme.media?.lg} {
+      font-size: 19px;
+    }
+  }
+
+  .button {
+    display: block;
+    margin: 5rem auto;
+    width: fit-content;
+    background-color: rgba(248, 186, 20, 1);
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: ${({ theme }) => theme.palette?.backgroundColor};
+    border-radius: 5px;
+    letter-spacing: 2px;
+  }
 `
 
 export const Video = styled.div`

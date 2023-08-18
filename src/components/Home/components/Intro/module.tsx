@@ -14,7 +14,7 @@ export const Intro = () => {
                 <Letter
                   initial={{ opacity: 0.5, filter: 'blur(10px)' }}
                   whileInView={{ opacity: 1, filter: 'blur(0px)' }}
-                  transition={{ duration: 0.75, delay: index * 0.05 }}
+                  transition={{ duration: 0.75, delay: index * 0.1 }}
                   key={index}
                 >
                   {letter === ' ' ? '\u00A0' : letter}

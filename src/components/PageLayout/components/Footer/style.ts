@@ -9,7 +9,7 @@ export const Container = styled.footer`
   background-color: ${({ theme }) => theme.palette?.backgroundColor};
   color: ${({ theme }) => theme.palette?.textColor};
   font-size: 12px;
-  margin-top: 6rem;
+  margin: 6rem auto;
 
   ul {
     display: flex;

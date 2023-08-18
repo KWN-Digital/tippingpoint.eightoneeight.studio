@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 export const Container = styled.div`
   width: 100vw;
-  height: 50vh;
+  height: 75vh;
   background-color: #000;
   display: flex;
   align-items: center;
@@ -47,7 +47,17 @@ export const Container = styled.div`
   }
 
   h4 {
-    font-size: 16px;
+    font-size: 12px;
+    @media ${({ theme }) => theme.media?.lg} {
+      font-size: 16px;
+    }
+  }
+
+  h5 {
+    font-size: 10px;
+    @media ${({ theme }) => theme.media?.lg} {
+      font-size: 14px;
+    }
   }
 
   .container {
@@ -57,13 +67,35 @@ export const Container = styled.div`
     }
     &__image {
       width: 100%;
-      height: 50vh;
-      background-color: ${({ theme }) => theme.palette?.backgroundColor};
+      height: 75vh;
+      /* background-color: ${({ theme }) => theme.palette?.backgroundColor}; */
+      background: linear-gradient(
+        220deg,
+        #000000,
+        #4c4c4c,
+        #4b4b4b,
+        #363636,
+        #232323
+      );
+      background-size: 1000% 1000%;
+      animation: AnimationName 60s ease infinite;
+      @keyframes AnimationName {
+        0% {
+          background-position: 0% 94%;
+        }
+        50% {
+          background-position: 100% 7%;
+        }
+        100% {
+          background-position: 0% 94%;
+        }
+      }
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        opacity: 0.5;
+        /* opacity: 0.5; */
+        mix-blend-mode: hard-light;
       }
 
       @media ${({ theme }) => theme.media?.lg} {

@@ -13,18 +13,20 @@ export const Container = styled.header<{ $height: number }>`
   `};
 
   a.cta {
-    padding: 0.5rem 1rem;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 0.75rem;
     font-weight: bold;
     letter-spacing: 3px;
     text-decoration: none;
+    @media ${({ theme }) => theme.media?.lg} {
+      font-size: 1rem;
+    }
   }
 
   .container {
     &__inner {
       display: flex;
-      align-items: center;
+      /* align-items: center; */
       justify-content: space-between;
       width: 100%;
     }
@@ -34,9 +36,14 @@ export const Container = styled.header<{ $height: number }>`
       text-transform: uppercase;
       font-weight: bold;
       letter-spacing: 8px;
+      line-height: 1.75;
       [href] {
         color: ${({ theme }) => theme.palette?.textColor};
         text-decoration: none;
+      }
+
+      @media ${({ theme }) => theme.media?.lg} {
+        font-size: 1rem;
       }
     }
 
