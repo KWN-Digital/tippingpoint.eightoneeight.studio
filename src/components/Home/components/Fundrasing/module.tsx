@@ -36,7 +36,11 @@ export const Fundraising = () => {
           just Alex&apos;s story; it&apos;s a universal story of growth,
           resilience, and ultimately, triumph.
         </p>
-        <a className="button" href="">
+        <a
+          className="button"
+          href="https://igg.me/at/tipping-point/x/34169928#/"
+          target="_blank"
+        >
           Donate on IndieGogo
         </a>
       </div>

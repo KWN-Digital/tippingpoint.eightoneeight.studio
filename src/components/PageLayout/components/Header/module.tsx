@@ -28,7 +28,11 @@ export const Header = () => {
         </div>
         <div className="container__nav">
           <div>
-            <Link className="cta" target="_blank" href="https://indiegogo.com">
+            <Link
+              className="cta"
+              target="_blank"
+              href="https://igg.me/at/tipping-point/x/34169928#/"
+            >
               Join Us
             </Link>
           </div>
