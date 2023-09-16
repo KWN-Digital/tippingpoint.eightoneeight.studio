@@ -33,6 +33,10 @@ export const Main: DefaultTheme = {
       font-size: 10px;
       letter-spacing: 5px;
     }
+    a:link,
+    a:visited {
+      color: rgba(248, 186, 20, 1);
+    }
   `,
   typography: {
     body: {
