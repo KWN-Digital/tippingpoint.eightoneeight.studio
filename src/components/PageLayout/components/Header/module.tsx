@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Container } from './style'
+import { Container, DonateButton } from './style'
 import { useEffect, useRef, useState } from 'react'
 
 export const Header = () => {
@@ -28,13 +28,13 @@ export const Header = () => {
         </div>
         <div className="container__nav">
           <div>
-            <Link
+            <DonateButton
               className="cta"
               target="_blank"
-              href="https://igg.me/at/tipping-point/x/34169928#/"
+              href="https://donate.stripe.com/00g9Ci9Rtgfs0i46oo"
             >
-              Join Us
-            </Link>
+              Donate
+            </DonateButton>
           </div>
         </div>
       </div>

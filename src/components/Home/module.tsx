@@ -1,14 +1,13 @@
 import { Intro } from './components/Intro'
-import { Fundraising } from './components/Fundrasing'
-
 import { Container } from './style'
 import { PropsWithChildren } from 'react'
+import { Phases } from './components/Phases'
 
 export const Home = ({}: PropsWithChildren) => {
   return (
     <Container>
       <Intro />
-      <Fundraising />
+      <Phases />
     </Container>
   )
 }

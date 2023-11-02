@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@next/font": "^13.4.16",
+    "@react-spring/parallax": "^9.7.3",
     "@u-wave/react-vimeo": "^0.9.10",
     "framer-motion": "^10.15.2",
     "moment": "^2.29.4",

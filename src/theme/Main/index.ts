@@ -61,6 +61,7 @@ export const Main: DefaultTheme = {
   palette: {
     backgroundColor: '#000',
     textColor: '#FFF',
+    accentColor: 'rgba(248, 186, 20, 1)',
   },
   breakpoints: {
     sm: '576px',

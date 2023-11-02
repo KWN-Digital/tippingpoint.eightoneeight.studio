@@ -40,8 +40,13 @@ export const Modal = styled(motion.div)`
     color: #fff;
     font-family: ${({ theme }) => theme.typography?.headers.fontFamily};
     text-transform: uppercase;
-    font-size: 140px;
-    letter-spacing: 14px;
+    font-size: 60px;
+    letter-spacing: 8px;
     font-weight: 400;
+    text-align: center;
+    @media ${({ theme }) => theme.media?.lg} {
+      font-size: 140px;
+      letter-spacing: 14px;
+    }
   }
 `

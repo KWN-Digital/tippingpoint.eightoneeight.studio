@@ -3,6 +3,7 @@ export interface ITimelineItem {
   cover: {
     src: string
   }
+  type: string
   title?: string
   subtitle?: string
   phase?: string
