@@ -7,7 +7,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <StyledComponentsRegistry>
       <html lang="en">
-        <body>
+        <body style={{ background: '#000' }}>
           <PageLayout>{children}</PageLayout>
         </body>
       </html>

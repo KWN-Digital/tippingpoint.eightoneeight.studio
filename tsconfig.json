@@ -2,7 +2,8 @@
   "compilerOptions": {
     "paths": {
       "#package": ["./package.json"],
-      "#components": ["./src/components*"],
+      "#components": ["./src/components"],
+      "#components/*": ["./src/components/*"],
       "#services/*": ["./src/services/*"],
       "#theme": ["./src/theme/index.ts"],
       "#public/": ["./public/*"]

@@ -7,7 +7,7 @@ export const Container = styled.div`
   width: 90vw;
 
   @media ${({ theme }) => theme.media?.lg} {
-    width: 50vw;
+    width: 60vw;
   }
 `
 

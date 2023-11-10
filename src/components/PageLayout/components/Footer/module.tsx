@@ -7,11 +7,13 @@ export const Footer = () => {
     <Container>
       <ul>
         <li>
-          &copy; {new Date().getFullYear()} AG Media LLC. All rights reserved.
+          Privacy Policy | Terms of Services <br />
+          Copyright &copy; {new Date().getFullYear()} AEG Media LLC. All rights
+          reserved.
         </li>
         <li>
           <a
-            href="https://www.kwn.digital"
+            href="https://www.kwn.digital/"
             style={{ textDecoration: 'none' }}
             target="_blank"
           >
