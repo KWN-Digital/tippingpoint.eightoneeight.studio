@@ -127,7 +127,7 @@ export const Bottom = styled(Top)`
 `
 
 export const Close = styled(motion.div)`
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 1000;

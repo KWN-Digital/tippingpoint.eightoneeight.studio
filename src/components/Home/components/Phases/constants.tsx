@@ -4,11 +4,11 @@ import { Pitch } from './components/Pitch'
 
 const CAST = [
   {
-    name: 'Timothy Morris Lane',
+    name: 'Jeremy Michael',
     role: 'Alex',
-    bio: "Timothy Morris Lane is a talented actor with a passion for learning and languages. He has studied acting at Kenyon College and the New York Film Academy's Acting Conservatory, and has worked in the Atlanta, Los Angeles, and NYC markets.\nLane's notable acting experiences include a role in Tyler Perry's All The Queen's Men and the lead role in the musical Let It Flow. He is also a skilled martial artist.\n Lane is inspired by other great actors and real people in real situations. He finds the most challenging part of acting to be pulling the emotional energy necessary for a scene and maintaining it for long periods of time. However, he finds it incredibly rewarding to watch the characters come to life at the end.\nLane is a versatile and talented actor with a bright future ahead of him. He is sure to continue to entertain and inspire audiences with his work.",
+    bio: 'Jeremy Michael, a dynamic and passionate actor with a rich background in theater and music, is a rising star in the entertainment industry. A graduate from the University of Buffalo, where he majored in Music Business and Theater, Jeremy has honed his skills through various performances in short films, student projects, and stage productions. His notable acting achievements include a significant role in Tyler Perry\'s "Sistas" during its third season and a standout performance as Marvin Gaye in the off-Broadway musical "Soul Sounds." Jeremy\'s dedication to his craft is evident in his ability to bring characters to life with authenticity and charisma. Besides acting, he is also a professional singer, showcasing his versatile talent in the performing arts. His journey has not been without challenges, particularly the relentless cycle of auditions and the waiting game that follows. However, Jeremy finds immense reward in the opportunities that come his way, cherishing each audition and callback as a chance to shine and be seen. An interesting and quirky aspect of Jeremy\'s personality is his love for quoting obscure movie lines, a habit that often brings a unique and lively element to his interactions. Jeremy\'s journey in acting is not just about portraying roles but about the continuous pursuit of growth, expression, and connecting with audiences in meaningful ways. His journey in the entertainment world is one to watch, as he continues to make his mark with his talent and dedication.',
     image: {
-      src: 'https://ucarecdn.com/6a86e1d3-8cbb-4611-aa82-b8bc1dc830f9/IMG_9689TimothyLane.JPG',
+      src: 'https://ucarecdn.com/69fea303-fd8c-49a9-b5fe-0a8390c2cf58/IMG_1466JeremyWilliams.jpeg',
       width: 590,
       height: 590,
     },
@@ -119,6 +119,14 @@ export const TIMELINE = {
               title: 'Visual Reference',
               image: {
                 src: 'https://ucarecdn.com/e4dc60dc-9025-439b-871a-2dc9594833f7/HOUSEPARTY20230501112311abca51093546fe8de8a89eefbc7489.webp',
+                width: 590,
+                height: 590,
+              },
+            },
+            {
+              title: 'Visual Reference',
+              image: {
+                src: 'https://ucarecdn.com/8252431f-a1e5-4983-af27-0125c35ef983/DuulPDKXQAAvQtm.jpeg',
                 width: 590,
                 height: 590,
               },

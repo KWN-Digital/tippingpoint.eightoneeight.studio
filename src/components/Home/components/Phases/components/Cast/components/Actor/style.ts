@@ -2,13 +2,18 @@
 import styled from 'styled-components'
 
 export const ActorBio = styled.div`
-  position: absolute;
-  bottom: -100%;
-  left: 0;
   width: 100%;
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.85);
   transition: all 0.5s ease;
+
+  @media ${({ theme }) => theme.media?.lg} {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    max-height: 100dvh;
+    overflow-y: scroll;
+  }
 
   h3,
   h4 {
@@ -28,12 +33,19 @@ export const Container = styled.div`
   }
 
   ${ActorBio} {
-    opacity: 0;
-    transition: all 0.5s ease;
+    @media ${({ theme }) => theme.media?.lg} {
+      opacity: 0;
+      transition: all 0.5s ease;
+    }
   }
 
   &:hover {
-    flex: 1 0 75%;
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  &.active {
+    flex: 1 0 35%;
     opacity: 1;
 
     ${ActorBio} {

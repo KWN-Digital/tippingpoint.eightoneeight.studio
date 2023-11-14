@@ -1,7 +1,7 @@
 import { IVisualReference } from './types'
 import { Container, Content } from './style'
 import Image from 'next/image'
-export const VisualReference = ({ handleSlideChange }: IVisualReference) => {
+export const VisualReference = ({}: IVisualReference) => {
   return (
     <Container>
       <Image
@@ -28,15 +28,15 @@ export const VisualReference = ({ handleSlideChange }: IVisualReference) => {
         height={590}
         alt=""
       />
-      <Image
+      {/* <Image
         src="https://ucarecdn.com/e8348d57-f50b-4dbf-8c69-1be608df60e7/images.jpeg"
         width={300}
         height={300}
         alt=""
-      />
+      /> */}
       <Content>
         <h3>Visual Reference</h3>
-        <button onClick={handleSlideChange}>Continue</button>
+        {/* <button onClick={handleSlideChange}>Continue</button> */}
       </Content>
     </Container>
   )

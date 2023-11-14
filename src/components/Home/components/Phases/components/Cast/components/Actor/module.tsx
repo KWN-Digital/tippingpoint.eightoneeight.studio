@@ -5,11 +5,22 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { truncate } from './utils'
 
-export const Actor = ({ image, name, role, bio }: IActor) => {
+export const Actor = ({
+  image,
+  name,
+  role,
+  bio,
+  onActive,
+  dataIndex,
+}: IActor) => {
   const [showBio, setShowBio] = useState(false)
 
   return (
-    <Container onMouseLeave={() => setShowBio(false)}>
+    <Container
+      data-index={dataIndex}
+      onClick={onActive}
+      onMouseLeave={() => setShowBio(false)}
+    >
       <ActorImage>
         <Image
           src={image.src}

@@ -1,3 +1,5 @@
+import { MouseEventHandler } from 'react'
+
 export interface IActor {
   name: string
   image: {
@@ -7,4 +9,6 @@ export interface IActor {
   }
   role: string
   bio?: string
+  onActive?: MouseEventHandler<HTMLDivElement>
+  dataIndex?: number
 }

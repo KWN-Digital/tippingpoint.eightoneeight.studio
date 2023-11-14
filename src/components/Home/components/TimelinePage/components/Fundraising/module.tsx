@@ -27,11 +27,17 @@ export const Fundraising = ({}: IFundraising) => {
             support.
           </p>
           <p>
-            For those who would like to continue supporting our projects and our
-            creative endeavors, we invite you to contribute to our ongoing
-            mission. Your donations will not only help us bring &quot;Tipping
-            Point&quot; to life but also support future projects that we are
-            passionate about.
+            For those who would like to&nbsp;
+            <a
+              href="https://donate.stripe.com/00g9Ci9Rtgfs0i46oo"
+              target="_blank"
+            >
+              continue supporting
+            </a>
+            &nbsp; our projects and our creative endeavors, we invite you to
+            contribute to our ongoing mission. Your donations will not only help
+            us bring &quot;Tipping Point&quot; to life but also support future
+            projects that we are passionate about.
           </p>
           <p>
             Stay tuned for updates as we continue to work diligently on bringing
@@ -45,7 +51,7 @@ export const Fundraising = ({}: IFundraising) => {
             the world.
           </p>
           <p>With immense gratitude,</p>
-          <p>[Your Name or Film Team]</p>
+          <p>The Team @ 818 Studios</p>
         </div>
       </div>
     </Container>
