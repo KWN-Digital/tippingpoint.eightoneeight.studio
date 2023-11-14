@@ -1,6 +1,6 @@
 'use client'
 import { DefaultTheme, css } from 'styled-components'
-import { Six_Caps, Open_Sans } from '@next/font/google'
+import { Six_Caps, Open_Sans } from 'next/font/google'
 
 const sixCaps = Six_Caps({
   weight: '400',
@@ -21,6 +21,10 @@ export const Main: DefaultTheme = {
       box-sizing: border-box;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      background-color: #000;
     }
 
     button {
@@ -61,6 +65,7 @@ export const Main: DefaultTheme = {
   palette: {
     backgroundColor: '#000',
     textColor: '#FFF',
+    accentColor: 'rgba(248, 186, 20, 1)',
   },
   breakpoints: {
     sm: '576px',

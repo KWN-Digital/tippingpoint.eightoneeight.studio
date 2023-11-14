@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { Container } from './style'
 
 export const Footer = () => {
@@ -7,7 +8,18 @@ export const Footer = () => {
     <Container>
       <ul>
         <li>
-          &copy; {new Date().getFullYear()} 818 Studios. All rights reserved.
+          <Link href="/privacy">Privacy Policy</Link>&nbsp;|&nbsp; Copyright
+          &copy; {new Date().getFullYear()} AEG Media LLC. All rights reserved.
+        </li>
+        <li>
+          <a
+            href="https://www.kwn.digital/"
+            style={{ textDecoration: 'none' }}
+            target="_blank"
+          >
+            <u>Site</u> by&nbsp;
+            <em>KWN Digital</em>
+          </a>
         </li>
       </ul>
     </Container>
